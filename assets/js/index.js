@@ -20,8 +20,8 @@ const addToDo = (item) => {
     var listItem = document.createElement("li");
     listItem.innerHTML = `
          ${item}
-        <i class="fa-solid fa-pen edit"></i>
-        <i class="fas fa-times delete"></i>        
+        <i class="fas fa-times delete"></i>     
+        <i class="fa-solid fa-check done"></i>
     `;
     listItem.addEventListener(
         "click",
@@ -33,6 +33,15 @@ const addToDo = (item) => {
         "click",
         function() {
             listItem.remove()
+        }
+    )
+    listItem.querySelector(".done").addEventListener(
+        "click",
+        function() {
+            listItem.style.backgroundColor='green';
+            listItem.style.color='white';
+            listItem.style.textDecoration='line-through';
+            listItem.style.border='none';
         }
     )
     toDoBox.appendChild(listItem)
