@@ -18,17 +18,7 @@ item.addEventListener(
 )
 const addToDo = (item) => {
     var listItem = document.createElement("li");
-    listItem.innerHTML = `
-         ${item}
-        <i class="fas fa-times delete"></i>     
-        <i class="fa-solid fa-check done"></i>
-    `;
-    listItem.addEventListener(
-        "click",
-        function() {
-            this.classList.toggle("done");
-        }
-    )
+    listItem.innerHTML = `${item} <i class="fas fa-times delete"></i><i class="fa-solid fa-check done"></i>`;
     listItem.querySelector(".delete").addEventListener(
         "click",
         function() {
