@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+body{
+    background-image: url('../img/bg.PNG');
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 1rem;
+}
+.input-field {
+    position: relative;
+    width: 100%;
+}
+input, #to-do-box li{
+    margin-bottom: 2rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: left;
+    font-size: 20px;
+    padding: 1rem;
+    border: 1px solid #fff;
+    outline: 0;
+    border-radius: 5px;
+    width: 100%;
+    transition: all 0.2s ease;
+    height: 3.6rem
+}
+.input-field .add {
+    position: absolute;
+    right: 0;
+    top: 1;
+    font-size: 2.6rem;
+    font-weight: bolder;
+    background-color: #fff;
+    color: rgb(124, 33, 33);
+    padding: 0px 15px;
+    border-radius: 0 5px 5px  0 ;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+#to-do-box {
+    margin-top: 10px;
+    list-style: none;
+    padding-inline-start: 0;
+    list-style: none;
+}
+#to-do-box li {
+    position: relative;
+    margin-bottom: .5rem;
+}
+#to-do-box li i{
+    position: absolute;
+    right: 10px;
+    top: 17px;
+    margin-right: 10px;
+}
+#to-do-box li .edit{
+    right: 40px;
+}
+/* .done {
+    text-decoration: line-through;
+    color: black;
+    background-color: #95a5a6 !important;
+} */
+
