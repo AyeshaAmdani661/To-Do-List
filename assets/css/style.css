@@ -5,7 +5,7 @@
     font-weight: 400;
 }
 body{
-    background-color: rgb(187, 243, 243);
+    background: linear-gradient(rgb(187, 243, 243),white ,rgb(187, 243, 243));
 }
 h1{
     font-family: 'Roboto', sans-serif;
@@ -32,7 +32,8 @@ input, #to-do-box li{
     border-radius: 5px;
     width: 100%;
     transition: all 0.2s ease;
-    height: 3.6rem
+    height: 3.6rem;
+    background-color: transparent;
 }
 .input-field .add {
     position: absolute;
