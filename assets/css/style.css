@@ -5,7 +5,7 @@
     font-weight: 400;
 }
 body{
-    background: linear-gradient(to right, rgb(187, 243, 243),white, rgb(187, 243, 243));
+    background: linear-gradient(to right, #bbf3f3,white,#ffd2f5);
 }
 h1{
     font-family: 'Roboto', sans-serif;
